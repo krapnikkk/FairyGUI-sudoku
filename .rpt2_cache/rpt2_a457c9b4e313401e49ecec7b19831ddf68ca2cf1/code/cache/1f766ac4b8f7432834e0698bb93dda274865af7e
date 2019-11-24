@@ -1,0 +1,6 @@
+{
+  "code": "import Generator from \"./generator\";\r\nexport default class Sudoku {\r\n    constructor() {\r\n        this._solutionMatrix = [];\r\n        this.puzzlexMatrix = [];\r\n        const generator = new Generator();\r\n        generator.generate();\r\n        this._solutionMatrix = generator.martrix;\r\n    }\r\n    make(level = 5) {\r\n        this.puzzlexMatrix = this._solutionMatrix.map(row => {\r\n            return row.map(cell => Math.random() * 9 < level ? 0 : cell);\r\n        });\r\n    }\r\n}\r\n",
+  "references": [
+    "D:/workspace/coding/layabox/sudoku/src/core/generator.ts"
+  ]
+}

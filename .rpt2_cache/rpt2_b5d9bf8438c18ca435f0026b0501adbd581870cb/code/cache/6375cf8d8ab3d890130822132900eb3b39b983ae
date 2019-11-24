@@ -1,0 +1,4 @@
+{
+  "code": "export default class Grid extends fgui.GComponent {\r\n    constructor() {\r\n        super();\r\n        this._isAuto = false;\r\n    }\r\n    constructFromXML(xml) {\r\n        super.constructFromXML(xml);\r\n        this._title = this.getChild(\"title\").asTextField;\r\n        this._bg = this.getChild(\"bg\").asGraph;\r\n    }\r\n    set bgColor(string) {\r\n        this._bg.color = string;\r\n    }\r\n    set title(string) {\r\n        this._text = string;\r\n        this._title.text = string;\r\n    }\r\n    get title() {\r\n        return this._text;\r\n    }\r\n    set isAuto(bool) {\r\n        this._isAuto = bool;\r\n    }\r\n    get isAuto() {\r\n        return this._isAuto;\r\n    }\r\n}\r\n",
+  "references": []
+}

@@ -1,0 +1,4 @@
+{
+  "code": "export default class toolkit {\r\n    static makeRow(value = 0) {\r\n        const array = new Array(9);\r\n        array.fill(value);\r\n        return array;\r\n    }\r\n    static makeMatrix(value = 0) {\r\n        return Array.from({ length: 9 }, () => this.makeRow(value));\r\n    }\r\n    static shuffle(array) {\r\n        const endIndex = array.length - 2;\r\n        for (let i = 0, length = array.length; i < endIndex; i++) {\r\n            const j = Math.floor(Math.random() * (length - i));\r\n            [array[i], array[j]] = [array[j], array[i]];\r\n        }\r\n        return array;\r\n    }\r\n}\r\n",
+  "references": []
+}

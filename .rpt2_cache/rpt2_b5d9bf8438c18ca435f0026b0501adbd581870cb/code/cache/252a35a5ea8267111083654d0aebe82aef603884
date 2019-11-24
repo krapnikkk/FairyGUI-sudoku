@@ -1,0 +1,7 @@
+{
+  "code": "import Events from \"../core/events\";\r\nexport default class Popup extends fgui.GComponent {\r\n    constructor() {\r\n        super();\r\n        this._types = [\"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\"];\r\n    }\r\n    constructFromXML(xml) {\r\n        super.constructFromXML(xml);\r\n        this.renderList();\r\n    }\r\n    show() {\r\n        this.visible = true;\r\n    }\r\n    hide() {\r\n        this.visible = false;\r\n    }\r\n    renderList() {\r\n        var list = this.getChild(\"panel\").asList;\r\n        list.removeChildrenToPool();\r\n        list.on(fairygui.Events.CLICK_ITEM, this, this.onClickItem);\r\n        for (let i = 0; i < this._types.length; i++) {\r\n            const item = list.addItemFromPool();\r\n            const title = this._types[i];\r\n            item.title = title;\r\n        }\r\n    }\r\n    onClickItem(evt) {\r\n        console.log(evt.title);\r\n        Laya.stage.event(Events.CHOOSE_NUMBER, evt.title);\r\n        this.hide();\r\n    }\r\n}\r\n",
+  "references": [
+    "D:/workspace/coding/layabox/sudoku/src/ui/grid.ts",
+    "D:/workspace/coding/layabox/sudoku/src/core/events.ts"
+  ]
+}

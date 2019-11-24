@@ -1,0 +1,22 @@
+{
+	"atlasSetting":{
+		"maxSize":1024,
+		"paging":true,
+		"sizeOption":"pot"
+	},
+	"binaryFormat":true,
+	"codeGeneration":{
+		"allowGenCode":false,
+		"classNamePrefix":"UI_",
+		"codePath":null,
+		"codeType":"",
+		"getMemberByName":false,
+		"ignoreNoname":false,
+		"memberNamePrefix":"m_",
+		"packageName":null
+	},
+	"compressDesc":true,
+	"fileExtension":"fui",
+	"packageCount":2,
+	"path":"D:\\workspace\\coding\\layabox\\sudoku\\bin\\res\\ui"
+}

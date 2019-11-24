@@ -1,0 +1,8 @@
+{
+  "code": "import Sudoku from \"./core/sudoku\";\r\nexport default class App {\r\n    constructor() {\r\n        fgui.UIPackage.loadPackage(\"res/ui/sudoku\", Laya.Handler.create(this, this.onUILoaded));\r\n    }\r\n    onUILoaded() {\r\n        this._view = fgui.UIPackage.createObject(\"sudoku\", \"Main\").asCom;\r\n        this._view.x = (Laya.Browser.clientWidth - this._view.width / window.devicePixelRatio) / 2;\r\n        fgui.GRoot.inst.addChild(this._view);\r\n        this._popup = this._view.getChild('n8');\r\n        this.renderList();\r\n    }\r\n    renderListItem() {\r\n    }\r\n    renderList() {\r\n        var list = this._view.getChild(\"n9\").asList;\r\n        list.removeChildrenToPool();\r\n        list.on(fairygui.Events.CLICK_ITEM, this, this.onClickItem);\r\n        const sudoku = new Sudoku();\r\n        sudoku.make(5);\r\n        const martrix = sudoku.puzzlexMatrix;\r\n        for (let i = 0; i < martrix.length; i++) {\r\n            for (let j = 0; j < 9; j++) {\r\n                const item = list.addItemFromPool();\r\n                const title = martrix[i][j];\r\n                if (title) {\r\n                    item.title = \"\" + title;\r\n                    item.bgColor = \"#eeeeee\";\r\n                }\r\n            }\r\n        }\r\n    }\r\n    onClickItem(evt) {\r\n        if (!evt.title) {\r\n            this._popup.show();\r\n        }\r\n    }\r\n}\r\n",
+  "references": [
+    "D:/workspace/coding/layabox/sudoku/src/ui/grid.ts",
+    "D:/workspace/coding/layabox/sudoku/src/core/sudoku.ts",
+    "D:/workspace/coding/layabox/sudoku/src/ui/popup.ts"
+  ]
+}

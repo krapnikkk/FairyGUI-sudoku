@@ -1,0 +1,4 @@
+{
+  "code": "export default class Events {\r\n}\r\nEvents.CHOOSE_NUMBER = \"choose_number\";\r\n",
+  "references": []
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="240,240">
+  <displayList>
+    <list id="n12_l00n" name="panel" xy="0,0" size="240,240" layout="flow_hz" overflow="hidden" defaultItem="ui://so1cm8x5ajpa1"/>
+  </displayList>
+</component>

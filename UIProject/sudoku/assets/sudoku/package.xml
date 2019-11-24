@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="so1cm8x5">
+  <resources>
+    <component id="sp2j0" name="Main.xml" path="/" exported="true"/>
+    <component id="ajpa1" name="grid.xml" path="/component/" exported="true"/>
+    <image id="ajpa3" name="n3.png" path="/"/>
+    <image id="ajpa4" name="n4.png" path="/"/>
+    <image id="ajpa5" name="n5.png" path="/"/>
+    <component id="ajpa7" name="btn_check.xml" path="/"/>
+    <component id="t2a29" name="btn_reset.xml" path="/"/>
+    <component id="t2a2a" name="btn_rebuild.xml" path="/"/>
+    <component id="t2a2b" name="popup.xml" path="/component/" exported="true"/>
+  </resources>
+  <publish name="sudoku"/>
+</packageDescription>

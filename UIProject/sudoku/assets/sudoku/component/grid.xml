@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="80,80">
+  <displayList>
+    <graph id="n0_ajpa" name="bg" xy="0,0" size="80,80" type="rect" lineColor="#ff999999"/>
+    <text id="n1_ajpa" name="title" xy="0,0" size="80,80" fontSize="32" align="center" vAlign="middle" autoSize="none" bold="true" text="">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>
